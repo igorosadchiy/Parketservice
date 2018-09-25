@@ -6,6 +6,7 @@ body {
     color: #666666;
 	font-family: 'PT+Sans', sans-serif;
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 /* RESET */
@@ -334,7 +335,7 @@ input::-webkit-input-placeholder {
 	content: "";
 	top: 0;
 	left: 0;
-    opacity: 0.55;
+    opacity: 0.4;
 	right: 0;
 	bottom: 0;
 	z-index: -1;
