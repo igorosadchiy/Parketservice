@@ -82,7 +82,53 @@
 
 		}]
 	});
-	
+    
+    /*----------------------------
+    Modal submit
+    ------------------------------ */
+    $('#check').on('click', function() {
+        if ($("#check").prop("checked")) {
+            $('#button').attr('disabled', false);
+        } else {
+            $('#button').attr('disabled', true);
+        }
+    });
+
+    $('#contactForm').on('submit', function(event) {
+        
+        event.preventDefault();
+
+        var form = $('#contactForm'),
+            button = $('#button'),
+            answer = $('#answer'),
+            loader = $('#loader');
+
+        $.ajax({
+            url: 'handler.php',
+            type: 'POST',
+            data: form.serialize(),
+            beforeSend: function() {
+                answer.empty();
+                button.attr('disabled', true).css('margin-bottom', '20px');
+                loader.fadeIn();
+            },
+            success: function(result) {
+                loader.fadeOut(300, function() {
+                    answer.text(result);
+                });
+                form.find('.form-control').val(' ');
+                button.attr('disabled', false);
+            },
+            error: function() {
+                loader.fadeOut(300, function() {
+                    answer.text('Произошла ошибка! Попробуйте позже.');
+                });
+                button.attr('disabled', false);
+            }
+        });
+
+    });
+    
 	/*----------------------------
     Preloader
     ------------------------------ */

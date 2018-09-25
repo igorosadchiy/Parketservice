@@ -8,17 +8,13 @@
         <meta name="description" content="Качественный ремонт и реставрация паркета в Киеве. Все виды работ. Профессиональные специалисты. Европейское оборудование. Доступные цены. Звоните: (096) 597-98-81">
         
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all">
-        
 		<link rel="stylesheet" type="text/css" href="css/slick.css">
 		<link rel="stylesheet" type="text/css" href="css/slicknav.min.css" media="all">
 		<link rel="stylesheet" type="text/css" href="css/animate.min.css">
-        
 		<link rel="stylesheet" type="text/css" href="css/icofont.css" media="all">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-        
 		<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
 		<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all">
-        
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
         
 		<!--[if lt IE 9]>
@@ -54,7 +50,7 @@
                                 <li><a class="nav-link" href="#pricing">Цены</a></li>
                                 <li><a class="nav-link" href="#about">О нас</a></li>
                                 <li><a class="nav-link" href="#contact">Контакты</a></li>
-                                <li><a class="callback-btn" href="#">Обратный звонок</a></li>
+                                <li><a class="callback-btn" href="#" data-toggle="modal" data-target="#modal-callback">Обратный звонок</a></li>
                             </ul>
 					    </div>
 					</div>
@@ -70,7 +66,7 @@
 						<div class="hero-area-content">
 							<h1 class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">Профессиональные паркетные работы в Киеве</h1>
 							<p class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s">Паркет – это одно из самых красивых и надежных покрытий пола, но выполнение паркетных работ это очень сложный и ответственный процесс, который требует специальных знаний и большого опыта.  Мы прекрасно это понимаем и с особой ответственностью относимся к своему делу.</p>
-							<a href="#" class="callback-btn wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">Вызвать мастера</a>
+							<a href="#" class="callback-btn wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s" data-toggle="modal" data-target="#modal-callback">Вызвать мастера</a>
 						</div>
 					</div>
 					<div class="col-lg-5">
@@ -97,7 +93,7 @@
 						<div class="single-showcase-box">
 							<h4>Шлифовка паркета</h4>
 							<p>Отличный способ придать напольному покрытию безупречный внешний вид. Устраняет царапины, сколы и прочие неровности, появляющиеся во время эксплуатации. Также может выполняться для нового паркета – чтобы увеличить срок его службы. Стоит услуга относительно недорого, зато ближайшие пару лет вы будете ежедневно любоваться красивым напольным покрытием.</p>
-							<a href="#" class="callback-btn appao-btn2">Заказать</a>
+							<a href="#" class="callback-btn appao-btn2" data-toggle="modal" data-target="#modal-callback">Заказать</a>
 						</div>
 					</div>
 					<div class="col-lg-6 wow fadeInRight" data-wow-duration="1s">
@@ -116,7 +112,7 @@
 						<div class="single-showcase-box">
 							<h4>Циклевка паркета</h4>
 							<p>Простая и доступная услуга по восстановлению напольного покрытия. Подходит даже для старых полов с длительным сроком эксплуатации. Во время циклевки снимается верхний слой древесины, в результате чего устраняются царапины, мелкие дефекты, потемневший лак. В итоге пол снова становится ровным, красивым, блестящим – словом, выглядит практически как новый!</p>
-							<a href="#" class="callback-btn appao-btn2">Заказать</a>
+							<a href="#" class="callback-btn appao-btn2" data-toggle="modal" data-target="#modal-callback">Заказать</a>
 						</div>
 					</div>
 				</div>
@@ -125,7 +121,7 @@
 						<div class="single-showcase-box">
 							<h4>Ремонт паркета</h4>
 							<p>Существует множество видов ремонта, которые могут понадобиться паркету. Это включает как более простые восстановительные работы, так и некоторые сложные виды. К таким видам реставрации паркета можно отнести циклевку пола, устранение незначительных, но заметных дефектов пола, к примеру, царапин и скол, образовавшихся на поверхности лака. С особым вниманием необходимо отнестись к ремонту того паркета, на котором имеются щели и другие деформации, ведь он требует большего количества времени и особого подхода.</p>
-							<a href="#" class="callback-btn appao-btn2">Заказать</a>
+							<a href="#" class="callback-btn appao-btn2" data-toggle="modal" data-target="#modal-callback">Заказать</a>
 						</div>
 					</div>
 					<div class="col-lg-6 wow fadeInRight" data-wow-duration="1s">
@@ -355,7 +351,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <a href="#" class="callback-btn">Вызвать мастера</a>
+                        <a href="#" class="callback-btn" data-toggle="modal" data-target="#modal-callback">Вызвать мастера</a>
                     </div>
                 </div>
 			</div>
@@ -396,7 +392,7 @@
 							<p class="form-message"></p>
 							<form id="contact-form" action="#" method="POST">
 				                <input name="name" type="text" required="required" placeholder="Ваше имя">
-				                <input name="email" type="text" required="required" placeholder="Телефон или E-mail" autocomplete="off">
+				                <input name="email" type="text" required="required" placeholder="Телефон или E-mail">
 				                <textarea name="message" required="required" placeholder="Сообщение"></textarea>
 				                <button type="submit" name="submit">Отправить</button>
 				            </form>
@@ -443,6 +439,49 @@
 				</div>
 			</div>
 		</footer>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="modal-callback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Обратная связь</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="contactForm" action="handler.php" method="post">
+                            <div class="form-group">
+                                <label for="name">Ваше имя:</label>
+                                <input id="name" class="form-control" name="name" required type="text" placeholder="Имя">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Ваш E-mail:</label>
+                                <input id="email" class="form-control" name="email" required type="text" placeholder="E-mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Ваш телефон:</label>
+                                <input id="phone" class="form-control" name="phone" required type="text" placeholder="(000) 000-00-00">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Текст сообщения:</label>
+                                <textarea id="message" class="form-control" required name="message" rows="4"></textarea>
+                            </div>
+                            <div class="form-group form-check">
+                                <input id="check" class="form-check-input" checked type="checkbox">
+                                <label class="form-check-label" for="check">Я добровольно отправляю свои данные</label>
+                            </div>
+                            <button id="button" class="btn btn-success" type="submit">Отправить</button>
+                            <div class="result">
+                                <span id="answer"></span>
+                                <span id="loader" style="display:none"><img src="img/loader-modal.gif" alt=""></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <!-- scroll to top -->
 		<a href="#" class="scrollToTop">
